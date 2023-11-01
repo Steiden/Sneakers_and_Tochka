@@ -1,0 +1,183 @@
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url(fonts/AnonymousPro-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url(fonts/AnonymousPro-Regular.ttf);
+}
+
+h1 {
+  font-family: "Anonymous Pro", sans-serif;
+  font-size: 56px;
+}
+
+h2 {
+  font-family: "Anonymous Pro", sans-serif;
+  font-size: 48px;
+}
+
+h3 {
+  font-family: "Anonymous Pro", sans-serif;
+  font-size: 26px;
+}
+
+p {
+  font-family: "Anonymous Pro", sans-serif;
+  font-size: 14px;
+}
+
+img {
+  width: 370px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* 
+  width: 1440px; */
+}
+
+:root {
+  --black: #121723;
+  --text_gray: #a1a6b4;
+}
+
+/* Шапка сайта */
+.header {
+  background-color: #fff;
+
+  height: 110px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 140px 15px;
+}
+.header__logo {
+  width: 210px;
+}
+.header__nav {
+}
+.header__list {
+}
+.list {
+  list-style: none;
+}
+.header__item {
+  display: inline;
+  margin-inline: 12px;
+}
+.list__item {
+}
+.header__link {
+}
+.link {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* Основная часть сайта */
+.main {
+  background-color: #f1f1f1;
+
+  padding: 25px 140px;
+}
+.main__title {
+  color: var(--black);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 48px */
+}
+.main__card-container {
+}
+.card-container {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.card {
+  background-color: #fff;
+
+  border-radius: 12px;
+  max-width: 370px;
+  height: fit-content;
+}
+.card-container__item {
+}
+.sneaker {
+}
+.card__img {
+}
+.card__about {
+  padding: 32px 24px;
+}
+.card__title {
+  color: var(--black);
+  font-size: 26px;
+  font-weight: 700;
+}
+.card__description {
+  color: var(--black);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* Подвал сайта */
+.footer {
+  background-color: var(--black);
+
+  padding: 33px 140px 21px;
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__logo {
+  width: 300px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__logo-letter {
+  width: auto;
+  margin-inline: 0.15px;
+}
+.footer__logo-letter:last-child {
+  align-self: flex-end;
+}
+.letter-T {
+  margin-left: 11.5px;
+}
+.footer__nav {
+}
+.footer__list {
+}
+.footer__item {
+  display: inline;
+
+  margin-inline: 12px;
+}
+.footer__link {
+  color: #fff;
+}
+.footer__line {
+  width: 100%;
+  height: 1px;
+  border: none;
+  background-color: rgba(230, 232, 236, 0.4);
+}
+.footer__about {
+  color: var(--text_gray);
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 18px;
+}
