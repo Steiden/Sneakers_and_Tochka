@@ -1,0 +1,7 @@
+.card__link-wrapper {
+	transition: transform ease-in-out .2s;
+}
+
+.card__link-wrapper:hover {
+	transform: translateY(-3%);
+}

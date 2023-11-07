@@ -1,0 +1,15 @@
+@media (width <= 1024px) {
+	.header,
+	.footer__content {
+		flex-wrap: wrap;
+		height: max-content;
+	}
+
+	.footer__content {
+		justify-content: center;
+	}
+
+	.list {
+		padding: 0;
+	}
+}

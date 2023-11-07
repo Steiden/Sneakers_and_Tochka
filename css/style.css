@@ -1,12 +1,91 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Anonymous Pro";
-  src: url(fonts/AnonymousPro-Bold.ttf);
+  src: url(../fonts/AnonymousPro-Bold.ttf);
   font-weight: 700;
 }
-
 @font-face {
   font-family: "Anonymous Pro";
-  src: url(fonts/AnonymousPro-Regular.ttf);
+  src: url(../fonts/AnonymousPro-Regular.ttf);
+}
+.card__link-wrapper {
+  transition: transform ease-in-out 0.2s;
+}
+
+.card__link-wrapper:hover {
+  transform: translateY(-3%);
+}
+
+.card-full-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block: 32px;
+}
+
+.card-full {
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 48px;
+}
+
+.card-full__img {
+  width: 100%;
+}
+
+.card-full__info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card-full__title {
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.card-full__subtitle {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.card-full__about {
+  display: flex;
+  gap: 32px;
+}
+
+.card-full__description {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.card-full__text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.card-full__title-medium {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.card-full__info-data {
+  border-bottom: 1px solid var(--black);
+  padding-block: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-full__title-small {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -36,8 +115,7 @@ img {
 body {
   margin: 0;
   padding: 0;
-  /* 
-  width: 1440px; */
+  font-family: "Anonymous Pro", sans-serif;
 }
 
 :root {
@@ -48,32 +126,26 @@ body {
 /* Шапка сайта */
 .header {
   background-color: #fff;
-
   height: 110px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px 140px 15px;
 }
+
 .header__logo img {
   width: 210px;
 }
-.header__nav {
-}
-.header__list {
-}
+
 .list {
   list-style: none;
 }
+
 .header__item {
   display: inline;
   margin-inline: 12px;
 }
-.list__item {
-}
-.header__link {
-}
+
 .link {
   text-decoration: none;
   color: #000;
@@ -84,44 +156,42 @@ body {
 /* Основная часть сайта */
 .main {
   background-color: #f1f1f1;
-
   padding: 25px 140px;
 }
+
 .main__title {
   color: var(--black);
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
-  line-height: 100%; /* 48px */
+  line-height: 100%;
+  margin-block: 32px;
 }
-.main__card-container {
-}
+
 .card-container {
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
 }
+
 .card {
   background-color: #fff;
-
   border-radius: 12px;
   max-width: 370px;
+  height: -moz-fit-content;
   height: fit-content;
 }
-.card-container__item {
-}
-.sneaker {
-}
-.card__img {
-}
+
 .card__about {
   padding: 32px 24px;
 }
+
 .card__title {
   color: var(--black);
   font-size: 26px;
   font-weight: 700;
 }
+
 .card__description {
   color: var(--black);
   font-size: 20px;
@@ -131,49 +201,51 @@ body {
 /* Подвал сайта */
 .footer {
   background-color: var(--black);
-
   padding: 33px 140px 21px;
 }
+
 .footer__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .footer__logo {
   width: 300px;
-
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .footer__logo-letter {
   width: auto;
   margin-inline: 0.15px;
 }
+
 .footer__logo-letter:last-child {
   align-self: flex-end;
 }
+
 .letter-T {
   margin-left: 11.5px;
 }
-.footer__nav {
-}
-.footer__list {
-}
+
 .footer__item {
   display: inline;
-
   margin-inline: 12px;
 }
+
 .footer__link {
   color: #fff;
 }
+
 .footer__line {
   width: 100%;
   height: 1px;
   border: none;
   background-color: rgba(230, 232, 236, 0.4);
 }
+
 .footer__about {
   color: var(--text_gray);
   font-size: 16px;
@@ -182,20 +254,21 @@ body {
   margin-top: 18px;
 }
 
-.card
+.card__link-wrapper {
+  text-decoration: none;
+}
 
 @media (width <= 1024px) {
-	.header,
-	.footer__content {
-		flex-wrap: wrap;
-		height: max-content;
-	}
-
-	.footer__content {
-		justify-content: center;
-	}
-
-	.list {
-		padding: 0;
-	}
+  .header,
+  .footer__content {
+    flex-wrap: wrap;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .footer__content {
+    justify-content: center;
+  }
+  .list {
+    padding: 0;
+  }
 }

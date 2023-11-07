@@ -1,0 +1,70 @@
+.card-full-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-block: 32px;
+}
+
+.card-full {
+	background-color: #fff;
+	border-radius: 50px;
+	padding: 48px;
+}
+
+.card-full__img {
+	width: 100%;
+}
+
+.card-full__info {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.card-full__title {
+	font-size: 48px;
+	font-weight: 400;
+}
+
+.card-full__subtitle {
+	font-size: 36px;
+	font-weight: 400;
+}
+
+.card-full__about {
+	display: flex;
+	gap: 32px;
+}
+
+.card-full__description {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+.card-full__text {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 28px;
+}
+
+.card-full__specifications {
+}
+
+.card-full__title-medium {
+	font-size: 30px;
+	font-weight: 400;
+}
+
+.card-full__info-data {
+	border-bottom: 1px solid var(--black);
+	padding-block: 24px;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.card-full__title-small {
+	font-size: 20px;
+	font-weight: 400;
+}
