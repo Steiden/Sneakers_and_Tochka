@@ -6,6 +6,8 @@
 }
 
 .card-full {
+	display: flex;
+	flex-direction: column;
 	background-color: #fff;
 	border-radius: 50px;
 	padding: 48px;

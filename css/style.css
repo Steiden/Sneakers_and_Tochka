@@ -24,6 +24,8 @@
 }
 
 .card-full {
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
   border-radius: 50px;
   padding: 48px;
@@ -154,8 +156,12 @@ body {
 }
 
 /* Основная часть сайта */
-.main {
+.main,
+.main-container {
   background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 25px 140px;
 }
 
@@ -258,17 +264,53 @@ body {
   text-decoration: none;
 }
 
-@media (width <= 1024px) {
+@media (width <= 870px) {
+  .main-container {
+    padding: 0;
+  }
   .header,
   .footer__content {
-    flex-wrap: wrap;
-    height: -moz-max-content;
-    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .footer__content {
-    justify-content: center;
+  .header {
+    padding: 24px 10px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 20px;
   }
   .list {
     padding: 0;
+  }
+  .card-full-container {
+    margin: 32px 16px;
+  }
+  .card-full {
+    border-radius: 12px;
+    padding: 24px;
+    gap: 32px;
+  }
+  .card-full__title {
+    font-size: 32px;
+  }
+  .card-full__sibtitle {
+    font-size: 20px;
+  }
+  .card-full__text,
+  .card-full__title-small {
+    font-size: 16px;
+  }
+  .card-full__title-medium {
+    font-size: 24px;
+  }
+  .card-full__about {
+    flex-direction: column;
+  }
+  .card-full__description {
+    width: 100%;
   }
 }
