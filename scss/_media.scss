@@ -4,6 +4,26 @@
 		padding: 0;
 	}
 
+	.main {
+		padding: 0 16px;
+		justify-content: center;
+	}
+
+	.main__title {
+		font-size: 32px;
+		margin-block: 32px;
+	}
+
+	.card-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.card {
+		width: max-content;
+	}
+
 	.header,
 	.footer__content {
 		display: flex;
@@ -59,5 +79,20 @@
 
 	.card-full__description {
 		width: 100%;
+	}
+}
+
+@media (width <= 400px) {
+	.header__link {
+		font-size: .9em;
+	}
+	.card {
+		max-width: 300px;
+	}
+}
+
+@media (width <= 320px) {
+	.card {
+		max-width: 250px;
 	}
 }
