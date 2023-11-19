@@ -79,6 +79,9 @@
   display: flex;
   justify-content: space-between;
 }
+.card-full__info-data:first-child {
+  padding-top: 0;
+}
 
 .card-full__title-small {
   font-size: 20px;

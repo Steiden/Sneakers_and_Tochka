@@ -64,6 +64,10 @@
 
 	display: flex;
 	justify-content: space-between;
+
+	&:first-child {
+		padding-top: 0;
+	}
 }
 
 .card-full__title-small {
