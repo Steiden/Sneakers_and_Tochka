@@ -141,12 +141,13 @@ body {
 .footer {
 	background-color: var(--black);
 
-	padding: 33px 140px 21px;
+	padding: 32px 150px 24px;
 }
 .footer__content {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	gap: 32px;
 }
 .footer__logo {
 	width: 300px;
@@ -168,6 +169,8 @@ body {
 .footer__nav {
 }
 .footer__list {
+	display: flex;
+	gap: 24px;
 }
 .footer__item {
 	display: inline;

@@ -219,13 +219,14 @@ body {
 /* Подвал сайта */
 .footer {
   background-color: var(--black);
-  padding: 33px 140px 21px;
+  padding: 32px 150px 24px;
 }
 
 .footer__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 32px;
 }
 
 .footer__logo {
@@ -246,6 +247,11 @@ body {
 
 .letter-T {
   margin-left: 11.5px;
+}
+
+.footer__list {
+  display: flex;
+  gap: 24px;
 }
 
 .footer__item {
@@ -309,7 +315,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-inline: 20px;
+    padding: 32px 16px 24px;
   }
   .list {
     padding: 0;
