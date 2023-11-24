@@ -80,14 +80,16 @@ body {
 }
 
 /* Основная часть сайта */
-.main,
-.main-container {
+.main {
 	background-color: #f1f1f1;
 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding: 25px 140px;
+}
+.main__card-container {
+	max-width: 1140px;
 }
 .main__title {
 	color: var(--black);
@@ -109,7 +111,7 @@ body {
 	background-color: #fff;
 
 	border-radius: 12px;
-	max-width: 370px;
+	max-width: 364px;
 	height: fit-content;
 }
 .card-container__item {
